@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפיכת הצ'אט לסוכן הקריירה האישי שלך | מרכז הזדמנות ובינה מלאכותית</title>
+    <!-- Tailwind CSS for modern design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Hebrew support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', 'Heebo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col justify-between">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white py-10 px-4 shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <!-- Logo Grid in Header -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-6 pb-6 border-b border-white/10">
+                <!-- RIGHT SIDE: Text branding -->
+                <div class="text-center md:text-right">
+                    <span class="bg-emerald-500/20 text-emerald-300 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        נבנה על ידי צוות מרכז הזדמנות ובינה מלאכותית
+                    </span>
+                    <h1 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">הפיכת הצ'אט לסוכן הקריירה האישי</h1>
+                    <p class="text-base md:text-lg text-indigo-100 font-light mt-1">סוכן משרות, מנסח נטוורקינג, משפר קורות חיים וסימולטור ראיונות - הכל במקום אחד!</p>
+                </div>
+                
+                <!-- LEFT SIDE: Main Logo Placeholder -->
+                <div class="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 backdrop-blur-sm">
+                    <!-- 
+                        💡 טיפ: כדי לשים את הלוגו שלך, החליפי את הקישור ב-src לקובץ המקומי שלך.
+                        לדוגמה: src="images/logo.png" או src="logo.svg"
+                    -->
+                    <img class="h-14 w-auto object-contain rounded-lg" 
+                         src="https://placehold.co/180x60/1e1b4b/cbd5e1?text=לוגו+מרכז+הזדמנות" 
+                         alt="לוגו מרכז הזדמנות ובינה מלאכותית"
+                         onerror="this.src='https://placehold.co/180x60/1e1b4b/cbd5e1?text=LOGO+PLACEHOLDER'">
+                </div>
+            </div>
+            
+            <!-- Dynamic Platform Choices -->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 mt-4">
+                <span class="text-xs text-slate-400 ml-2 block w-full md:w-auto text-center md:text-right mb-1 md:mb-0">תומך באופן מלא ב-</span>
+                <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur-sm text-xs font-semibold">
+                    🤖 ChatGPT
+                </div>
+                <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur-sm text-xs font-semibold">
+                    ✨ Google Gemini
+                </div>
+                <div class="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur-sm text-xs font-semibold">
+                    🧠 Claude AI
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 flex-1 w-full">
+        
+        <!-- Welcome Message & Concept -->
+        <section class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-100 mb-8 transition-all hover:shadow-md">
+            <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <span>👋</span> שלום לך! מוכן/ה לשדרג את חיפוש העבודה?
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-4 text-base md:text-lg">
+                חיפוש עבודה מודרני דורש כלים מודרניים. יצרנו עבורך מחולל פרומפטים שמגדיר **סוכן קריירה אישי מושלם** שיודע לעשות הכל: לסנן משרות, לנסח פניות, לשדרג קורות חיים ולאמן אותך לראיונות עבודה!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                <!-- Card 1 -->
+                <div class="bg-blue-50/60 p-4 rounded-xl border border-blue-100/50 flex flex-col justify-between">
+                    <div>
+                        <span class="p-2.5 bg-blue-500 text-white rounded-lg shadow-sm inline-block mb-3">🤖</span>
+                        <h3 class="font-bold text-blue-950 mb-1">מסנן משרות יומי</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">דירוג התאמה, סינון כפילויות ותקציר של דרישות הסף.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-emerald-50/60 p-4 rounded-xl border border-emerald-100/50 flex flex-col justify-between">
+                    <div>
+                        <span class="p-2.5 bg-emerald-500 text-white rounded-lg shadow-sm inline-block mb-3">🤝</span>
+                        <h3 class="font-bold text-emerald-950 mb-1">סייען נטוורקינג</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">ניסוח פניות מותאמות אישית למגייסים בלינקדאין ובפייסבוק.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-violet-50/60 p-4 rounded-xl border border-violet-100/50 flex flex-col justify-between">
+                    <div>
+                        <span class="p-2.5 bg-violet-500 text-white rounded-lg shadow-sm inline-block mb-3">📄</span>
+                        <h3 class="font-bold text-violet-950 mb-1">התאמת קורות חיים</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">התאמת קורות החיים שלך לדרישות המשרה החשובות למעבר ATS.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-100/50 flex flex-col justify-between">
+                    <div>
+                        <span class="p-2.5 bg-amber-500 text-white rounded-lg shadow-sm inline-block mb-3">🎤</span>
+                        <h3 class="font-bold text-amber-950 mb-1">סימולטור ראיונות</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">משחקי תפקידים, שאלות מאתגרות ומתן משוב מקצועי לשיפור.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 Step Guide -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-extrabold text-slate-800 mb-6 flex items-center gap-2">
+                <span>🚀</span> איך מתחילים? ב-4 שלבים פשוטים
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 text-center flex flex-col items-center">
+                    <span class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg mb-3 shadow-inner">1</span>
+                    <h3 class="font-bold mb-1">ממלאים פרטים</h3>
+                    <p class="text-xs text-slate-500">מזינים את הגדרות המשרה שלכם בטופס למטה</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 text-center flex flex-col items-center">
+                    <span class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg mb-3 shadow-inner">2</span>
+                    <h3 class="font-bold mb-1">מעתיקים</h3>
+                    <p class="text-xs text-slate-500">לוחצים על כפתור ההעתקה של הפרומפט שנוצר</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 text-center flex flex-col items-center">
+                    <span class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg mb-3 shadow-inner">3</span>
+                    <h3 class="font-bold mb-1">מדביקים בצ'אט</h3>
+                    <p class="text-xs text-slate-500">פותחים שיחה חדשה ב-ChatGPT, Gemini או Claude ומדביקים</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 text-center flex flex-col items-center">
+                    <span class="w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-lg mb-3 shadow-inner">4</span>
+                    <h3 class="font-bold mb-1">משגרים!</h3>
+                    <p class="text-xs text-slate-500">מאותו רגע פשוט זורקים משרות, קורות חיים ופרופילים לצ'אט</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Customizer Grid -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+            
+            <!-- Input Form (Right Side) -->
+            <div class="lg:col-span-5 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-950 mb-5 flex items-center gap-2 pb-2 border-b border-slate-100">
+                        <span>✏️</span> הגדרות המשרה שלך
+                    </h3>
+                    <div class="space-y-4">
+                        <!-- Option: AI Engine Selection -->
+                        <div>
+                            <label class="block text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">באיזה כלי AI תשתמש/י?</label>
+                            <select id="aiEngine" class="w-full px-3 py-2.5 border-2 border-indigo-200 rounded-lg text-sm bg-indigo-50/50 focus:outline-none focus:ring-2 focus:ring-indigo-500 font-bold" onchange="updatePrompt()">
+                                <option value="ChatGPT" selected>ChatGPT 🤖</option>
+                                <option value="Gemini">Google Gemini ✨</option>
+                                <option value="Claude">Claude AI 🧠</option>
+                                <option value="כללי">צ'אט AI כללי 💬</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">תחום מקצועי / תפקיד</label>
+                            <input type="text" id="jobField" value="רכזת גיוס ומשאבי אנוש" 
+                                class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50/50"
+                                oninput="updatePrompt()">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">אזור גאוגרפי</label>
+                            <input type="text" id="jobLocation" value="חיפה והסביבה" 
+                                class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50/50"
+                                oninput="updatePrompt()">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">היקף משרה</label>
+                                <input type="text" id="jobScope" value="מלאה או גמישה" 
+                                    class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50/50"
+                                    oninput="updatePrompt()">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">מודל עבודה</label>
+                                <input type="text" id="jobModel" value="היברידי או מהבית" 
+                                    class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50/50"
+                                    oninput="updatePrompt()">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">שנות ניסיון שיש לך</label>
+                            <input type="text" id="jobExperience" value="עד שנתיים ניסיון" 
+                                class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-slate-50/50"
+                                oninput="updatePrompt()">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">לשון הפנייה שלך</label>
+                                <select id="userGender" class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm bg-slate-50/50 focus:outline-none focus:ring-2 focus:ring-indigo-500" onchange="updatePrompt()">
+                                    <option value="נקבה" selected>נקבה</option>
+                                    <option value="זכר">זכר</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">המגדר שלך</label>
+                                <select id="authorGender" class="w-full px-3 py-2.5 border border-slate-200 rounded-lg text-sm bg-slate-50/50 focus:outline-none focus:ring-2 focus:ring-indigo-500" onchange="updatePrompt()">
+                                    <option value="נקבה" selected>נקבה (אשמח)</option>
+                                    <option value="זכר">זכר (אשמח)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Prompt Output (Left Side) -->
+            <div class="lg:col-span-7 flex flex-col h-full">
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md flex-1 flex flex-col relative overflow-hidden border border-slate-800">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+                        <span class="text-xs font-bold text-indigo-400 tracking-wider uppercase flex items-center gap-2">
+                            🚀 סוכן ה-AI האישי שלך מוכן להעתקה!
+                        </span>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="text-xs text-slate-400">מתעדכן בזמן אמת</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Pre-formatted Prompt Container -->
+                    <div class="overflow-y-auto max-h-[380px] text-xs font-mono text-slate-300 leading-relaxed text-right whitespace-pre-line flex-1 bg-slate-950/60 p-5 rounded-xl border border-slate-800/80 mb-4 cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-500" id="promptText" onclick="copyToClipboard()" title="לחץ להעתקה מהירה">
+                        <!-- Filled by JS -->
+                    </div>
+
+                    <!-- Action Buttons and Destination Links -->
+                    <div class="flex flex-col gap-3">
+                        <button onclick="copyToClipboard()" class="w-full bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                            <span id="copyBtnIcon">📋</span> <span id="copyBtnText">העתק פרומפט סוכן-על</span>
+                        </button>
+                        
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                            <a id="btnChatGPT" href="https://chatgpt.com/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 py-2.5 px-2 rounded-lg transition-colors border border-slate-700 font-semibold block">
+                                פתח ChatGPT 🤖
+                            </a>
+                            <a id="btnGemini" href="https://gemini.google.com/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-indigo-300 py-2.5 px-2 rounded-lg transition-colors border border-slate-700 font-semibold block">
+                                פתח Gemini ✨
+                            </a>
+                            <a id="btnClaude" href="https://claude.ai/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-orange-200 py-2.5 px-2 rounded-lg transition-colors border border-slate-700 font-semibold block">
+                                פתח Claude 🧠
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases & Examples -->
+        <section class="bg-slate-900 text-indigo-100 rounded-2xl p-6 md:p-8 shadow-md mb-8">
+            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2 pb-2 border-b border-indigo-950">
+                <span>💡</span> איך להשתמש בסוכן ביומיום?
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Use Case 1 -->
+                <div class="bg-indigo-950/30 p-5 rounded-xl border border-indigo-800/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">דוגמה 1: ניתוח משרות</span>
+                            <span class="text-xs text-blue-400">סיווג אוטומטי</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base mb-2">מצאת משרה מעניינת באולג'ובס או בלינקדאין?</h4>
+                        <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed">פשוט מעתיקים את תיאור המשרה ומדביקים אותו בצ'אט. הסוכן שלך ינתח אותה מיד בהתאם לפרופיל האישי שלך.</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-3.5 rounded-lg text-xs font-mono text-indigo-300 border border-slate-800">
+                        <strong class="text-white">מה להדביק בצ'אט:</strong> "דרושה רכזת גיוס בחיפה, ניסיון של חצי שנה לפחות..." <br><br>
+                        <strong class="text-blue-400">תשובת הסוכן:</strong> "התאמה: 9/10. התפקיד מושלם עבורך (חיפה, היברידי, והניסיון הקצר שלך מתאים בול)."
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="bg-indigo-950/30 p-5 rounded-xl border border-indigo-800/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-emerald-600 text-white text-xs font-semibold px-2.5 py-1 rounded">דוגמה 2: פניית נטוורקינג</span>
+                            <span class="text-xs text-emerald-400">יוצר קשרים חכם</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base mb-2">מצאת מגייס/ת פוטנציאלי/ת בלינקדאין?</h4>
+                        <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed">מעתיקים את הפוסט שפרסמו או את תיאור הפרופיל שלהם, והסוכן יכתוב הודעת פנייה מעולה ומותאמת אישית אליהם.</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-3.5 rounded-lg text-xs font-mono text-indigo-300 border border-slate-800">
+                        <strong class="text-white">מה להדביק בצ'אט:</strong> "הנה פרופיל של מגייסת: 'מגייסת כרגע לחברה טכנולוגית בחיפה...'" <br><br>
+                        <strong class="text-emerald-400">תשובת הסוכן:</strong> "הודעת פנייה: 'היי ענת, ראיתי שאת מגייסת לצוות בחיפה! כרכזת גיוס מהאזור...'"
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="bg-indigo-950/30 p-5 rounded-xl border border-indigo-800/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-violet-600 text-white text-xs font-semibold px-2.5 py-1 rounded">דוגמה 3: קורות חיים</span>
+                            <span class="text-xs text-violet-400 font-semibold">אופטימיזציה ל-ATS</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base mb-2">רוצה להתאים את קורות החיים שלך למשרה?</h4>
+                        <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed">רשמי בצ'אט "שדרג לי קורות חיים", הדביקי את המשרה וקורות החיים שלך, והסוכן ימצא אילו מילות מפתח עליך להדגיש.</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-3.5 rounded-lg text-xs font-mono text-indigo-300 border border-slate-800">
+                        <strong class="text-white">מה להדביק בצ'אט:</strong> "שדרג לי קורות חיים. הנה המשרה והנה קו״ח שלי: [טקסט קו״ח]" <br><br>
+                        <strong class="text-violet-400">תשובת הסוכן:</strong> "כדי לעבור סינון, מומלץ להחליף את הביטוי 'עבודה משרדית' ב-'ניהול אדמיניסטרטיבי' המופיע 3 פעמים במשרה."
+                    </div>
+                </div>
+
+                <!-- Use Case 4 -->
+                <div class="bg-indigo-950/30 p-5 rounded-xl border border-indigo-800/30 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-amber-600 text-white text-xs font-semibold px-2.5 py-1 rounded">דוגמה 4: הכנה לראיון</span>
+                            <span class="text-xs text-amber-400 font-semibold">סימולטור 1-על-1</span>
+                        </div>
+                        <h4 class="font-bold text-white text-base mb-2">רוצה להתאמן על ראיון עבודה אמיתי?</h4>
+                        <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed">כתבי לצ'אט "התחל סימולציית ראיון למשרה הבאה" והדביקי את תיאור המשרה. הסוכן יבחן אותך שאלה אחר שאלה!</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-3.5 rounded-lg text-xs font-mono text-indigo-300 border border-slate-800">
+                        <strong class="text-white">מה להדביק בצ'אט:</strong> "התחל סימולציה למשרה הזו: [הדבקת תיאור המשרה]" <br><br>
+                        <strong class="text-amber-400">תשובת הסוכן:</strong> "מצוין, אני המראיין שלך. שאלה ראשונה: 'ספרי לי על מקרה שבו נאלצת לגייס עובד בתקציב נמוך מאוד. כיצד פעלת?'"
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand & Connection Hub -->
+        <section class="bg-white rounded-2xl p-8 border border-slate-200 mb-8 shadow-sm">
+            <div class="max-w-3xl mx-auto text-center">
+                <!-- Customizable Logo Section -->
+                <div class="flex flex-wrap items-center justify-center gap-6 mb-6">
+                    <!-- LOGO PLACEHOLDER 1 -->
+                    <div class="p-2 border border-slate-200 rounded-xl bg-slate-50 shadow-inner">
+                        <!-- 
+                            💡 טיפ: לוגו ראשון (לדוגמה, משרד העבודה או מרכז הזדמנות)
+                            החליפו את ה-src בקובץ המקומי שלכם, למשל src="images/logo1.png"
+                        -->
+                        <img class="h-16 w-auto object-contain" 
+                             src="https://placehold.co/150x60/f8fafc/64748b?text=לוגו+הזדמנות" 
+                             alt="לוגו 1 מרכז הזדמנות">
+                    </div>
+                    <!-- LOGO PLACEHOLDER 2 -->
+                    <div class="p-2 border border-slate-200 rounded-xl bg-slate-50 shadow-inner">
+                        <!-- 
+                            💡 טיפ: לוגו שני (לדוגמה, שותף או עיריית חיפה)
+                            החליפו את ה-src בקובץ המקומי שלכם, למשל src="images/logo2.png"
+                        -->
+                        <img class="h-16 w-auto object-contain" 
+                             src="https://placehold.co/150x60/f8fafc/64748b?text=לוגו+בינה+מלאכותית" 
+                             alt="לוגו 2 בינה מלאכותית">
+                    </div>
+                </div>
+                
+                <h3 class="text-xl md:text-2xl font-extrabold text-slate-900 mb-2">נבנה על ידי צוות מרכז הזדמנות ובינה מלאכותית</h3>
+                <p class="text-slate-600 text-sm md:text-base mb-8 max-w-xl mx-auto">
+                    אנו במרכז הזדמנות מלווים אתכם צעד אחר צעד לרכישת מיומנויות דיגיטליות, שדרוג הקריירה והצלחה בעולם העבודה החדש באמצעות כלי בינה מלאכותית מתקדמים. צרו עמנו קשר!
+                </p>
+                
+                <!-- Contact Links Grid with high contrast design -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Workshops and Seminars -->
+                    <a href="https://katzr.net/f210dd" target="_blank" rel="noopener noreferrer" 
+                       class="flex flex-col items-center p-5 bg-gradient-to-br from-indigo-50 to-white hover:from-indigo-100/50 hover:to-white rounded-xl border border-indigo-100 transition-all duration-300 transform hover:-translate-y-1 group hover:shadow-md">
+                        <div class="w-12 h-12 rounded-full bg-indigo-500 text-white flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+                            📅
+                        </div>
+                        <span class="text-sm font-bold text-indigo-950">מידע והרשמה לסדנאות</span>
+                        <span class="text-xs text-indigo-600 font-semibold mt-1.5 underline">להרשמה לחצו כאן</span>
+                    </a>
+                    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/972548665362" target="_blank" rel="noopener noreferrer" 
+                       class="flex flex-col items-center p-5 bg-gradient-to-br from-emerald-50 to-white hover:from-emerald-100/50 hover:to-white rounded-xl border border-emerald-100 transition-all duration-300 transform hover:-translate-y-1 group hover:shadow-md">
+                        <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+                            💬
+                        </div>
+                        <span class="text-sm font-bold text-emerald-950">הוואטסאפ שלנו</span>
+                        <span class="text-xs text-emerald-600 font-bold mt-1.5">054-8665362</span>
+                    </a>
+                    
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/haifamce" target="_blank" rel="noopener noreferrer" 
+                       class="flex flex-col items-center p-5 bg-gradient-to-br from-blue-50 to-white hover:from-blue-100/50 hover:to-white rounded-xl border border-blue-100 transition-all duration-300 transform hover:-translate-y-1 group hover:shadow-md">
+                        <div class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+                            🔵
+                        </div>
+                        <span class="text-sm font-bold text-blue-950">דף הפייסבוק שלנו</span>
+                        <span class="text-xs text-blue-600 font-semibold mt-1.5 underline">לעמוד הפייסבוק</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tip to Pin the Chat -->
+        <section class="bg-amber-50 rounded-2xl p-6 border border-amber-200 flex items-start gap-4 mb-12">
+            <span class="text-2xl mt-0.5">📌</span>
+            <div>
+                <h4 class="font-bold text-amber-950 mb-1">טיפ זהב לחיסכון בזמן:</h4>
+                <p class="text-sm text-amber-900 leading-relaxed">
+                    לאחר שהדבקת את הפרומפט בפעם הראשונה בצ'אט והוא אישר שהוא מוכן לפעולה, לחצו על שלוש הנקודות שליד שם השיחה בתפריט הצדדי של ה-AI ובחרו ב-**"נעיצה" (Pin)**. תנו לשיחה את השם *"סוכן הקריירה שלי"*. מעתה, אל תפתחו צ'אט חדש בכל פעם, אלא פשוט חזרו תמיד לאותו הצ'אט כדי שה-AI יזכור את מי שאתם ואת הפרופיל שהזנתם!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-900 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-xs">
+        <div class="max-w-5xl mx-auto space-y-4">
+            <p class="mb-2">מדריך זה נבנה עבורכם על מנת להקל על תהליך חיפוש העבודה ורכישת כלים דיגיטליים חכמים.</p>
+            <p class="font-bold text-slate-300">נוצר באהבה על ידי צוות מרכז הזדמנות ובינה מלאכותית.</p>
+            
+            <!-- Optional Footer Partner Logos -->
+            <div class="flex items-center justify-center gap-4 py-2 border-t border-b border-slate-800 max-w-sm mx-auto">
+                <!-- 
+                    💡 טיפ: לוגו פוטר (למשל סמל עירייה או שותפים)
+                    החליפו את ה-src בקובץ המקומי שלכם
+                -->
+                <img class="h-8 w-auto opacity-50 hover:opacity-100 transition-opacity" 
+                     src="https://placehold.co/100x40/0f172a/94a3b8?text=שותפים" 
+                     alt="לוגו שותפים פוטר">
+            </div>
+
+            <div class="text-slate-500 flex items-center justify-center gap-2">
+                <span>© 2026 כל הזכויות שמורות - מרכז הזדמנות ובינה מלאכותית</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Toast Notification -->
+    <div id="toast" class="fixed bottom-5 left-5 bg-slate-950 text-white px-5 py-3.5 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-20 opacity-0 flex items-center gap-2 border border-indigo-500/30 z-50">
+        <span class="text-emerald-400 font-bold">✔</span>
+        <span class="text-xs md:text-sm font-semibold">הפרומפט הועתק בהצלחה! מוכן להדבקה בצ'אט שבחרת.</span>
+    </div>
+
+    <!-- Live Customizer Script -->
+    <script>
+        function updatePrompt() {
+            const aiEngine = document.getElementById('aiEngine').value;
+            const jobField = document.getElementById('jobField').value || '[תחום מקצועי]';
+            const jobLocation = document.getElementById('jobLocation').value || '[אזור גאוגרפי]';
+            const jobScope = document.getElementById('jobScope').value || '[היקף משרה]';
+            const jobModel = document.getElementById('jobModel').value || '[מודל עבודה]';
+            const jobExperience = document.getElementById('jobExperience').value || '[שנות ניסיון]';
+            const userGender = document.getElementById('userGender').value;
+            
+            // Format greeting based on selected AI tool
+            let aiGreeting = "היי AI";
+            if (aiEngine === "ChatGPT") {
+                aiGreeting = "היי ChatGPT";
+            } else if (aiEngine === "Gemini") {
+                aiGreeting = "היי ג'מיני";
+            } else if (aiEngine === "Claude") {
+                aiGreeting = "היי קלוד";
+            } else {
+                aiGreeting = "היי,";
+            }
+
+            const promptTemplate = `${aiGreeting}, מהרגע הזה אתה "סוכן ה-AI התעסוקתי והקריירה שלי" ומנהל הקריירה האישי שלי בשיחה הזו. התפקיד שלך הוא לעזור לי למצוא משרות, לסנן אותן, לעזור לי בנטוורקינג חכם, לשפר את קורות החיים שלי ולהכין אותי לראיונות עבודה.
+
+הנה הפרופיל התעסוקתי שלי והמטרות שלי:
+* אני מחפש/ת עבודה בתחום: ${jobField}
+* אזור גאוגרפי מועדף: ${jobLocation}
+* היקף משרה רצוי: ${jobScope}
+* מודל עבודה מועדף: ${jobModel}
+* שנות ניסיון שיש לי בתחום: ${jobExperience}
+
+מעכשיו, בכל פעם שאשלח לך מידע, פעל לפי ארבעת ההנחיות הבאות בהתאם למה שאבקש:
+
+1. אם אני מדביק/ה לך משרה או רשימת משרות:
+- תבדוק אם המשרה מתאימה לפרופיל שלי (מבחינת מיקום, ניסיון והיקף). אם היא לא מתאימה - תגיד לי בקצרה למה.
+- אם היא מתאימה - תדרג את רמת ההתאמה מ-1 עד 10 ותסכם לי ב-2 משפטים פשוטים: מה עושים בתפקיד ומה הדרישה הכי קריטית שם.
+
+2. אם אני מדביק/ה לך פוסט של מגייס/ת או פרופיל של אדם בלינקדאין/פייסבוק:
+- תמצא עבורי "נקודת חיבור" חכמה אליו (למשל: נושא משותף, משהו שהוא כתב שמתחבר לכישורים שלי).
+- תנסח לי הודעת פנייה קצרה ומזמינה אליו (עד 250 תווים, שיתאים למגבלת לינקדאין), בטון מקצועי אך בגובה העיניים, בלשון ${userGender} ובלשון הפנייה המתאימה לו/לה.
+
+3. אם אני כותב/ת לך "שדרג לי קורות חיים" ומדביק/ה משרה וקורות חיים:
+- תנתח את המשרה ותציג לי רשימה של 3-4 מילות מפתח או כישורים קריטיים שחסרים בקורות החיים שלי ביחס למשרה.
+- תן לי דוגמה מדויקת איך לערוך את פסקת הסיכום או הניסיון שלי כדי להתאים אותה באופן מוחלט למשרה זו.
+
+4. אם אני כותב/ת לך "התחל סימולציית ראיון למשרה הבאה" ומדביק/ה משרה:
+- כנס לתפקיד של מראיין מקצועי וקשוח לתפקיד הזה.
+- תשאל אותי רק שאלה אחת מורכבת ומאתגרת בכל פעם.
+- המתן לתשובה שלי, אל תענה במקומי. לאחר שאענה, תן לי משוב קצר, טיפ לשיפור, וציון מ-1 עד 10, ואז תשאל את השאלה הבאה.
+
+אם הבנת את התפקיד שלך ואת הפרופיל שלי, תענה לי בקצרה: "שלום! סוכן ה-AI התעסוקתי ומשפר הקריירה שלך מוכן לפעולה. שלח/י לי את המשרה הראשונה, פרופיל לנטוורקינג, קו״ח לשדרוג או בקש/י להתחיל סימולציית ראיון." בלי להוסיף טקסט מיותר.`;
+
+            document.getElementById('promptText').innerText = promptTemplate;
+
+            // Visual indicator on open buttons based on choice
+            resetButtonStyles();
+            if (aiEngine === "ChatGPT") {
+                document.getElementById('btnChatGPT').classList.add('ring-2', 'ring-emerald-500', 'bg-emerald-950/20');
+            } else if (aiEngine === "Gemini") {
+                document.getElementById('btnGemini').classList.add('ring-2', 'ring-indigo-500', 'bg-indigo-950/20');
+            } else if (aiEngine === "Claude") {
+                document.getElementById('btnClaude').classList.add('ring-2', 'ring-orange-500', 'bg-orange-950/20');
+            }
+        }
+
+        function resetButtonStyles() {
+            const buttons = ['btnChatGPT', 'btnGemini', 'btnClaude'];
+            buttons.forEach(id => {
+                const btn = document.getElementById(id);
+                if(btn) {
+                    btn.classList.remove('ring-2', 'ring-emerald-500', 'ring-indigo-500', 'ring-orange-500', 'bg-emerald-950/20', 'bg-indigo-950/20', 'bg-orange-950/20');
+                }
+            });
+        }
+
+        function copyToClipboard() {
+            const textToCopy = document.getElementById('promptText').innerText;
+            
+            // Fallback for execution within iframe structures if navigator.clipboard is unavailable
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToastFeedback();
+            } catch (err) {
+                console.error('Fallback copy failed', err);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showToastFeedback() {
+            // Show toast
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            // Visual feedback on button
+            const btnText = document.getElementById('copyBtnText');
+            const btnIcon = document.getElementById('copyBtnIcon');
+            btnText.innerText = 'הועתק בהצלחה! 🎉';
+            btnIcon.innerText = '✔';
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                btnText.innerText = 'העתק פרומפט סוכן-על';
+                btnIcon.innerText = '📋';
+            }, 3000);
+        }
+
+        // Initialize setup on page load
+        window.onload = function() {
+            updatePrompt();
+        };
+    </script>
+</body>
+</html>
