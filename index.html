@@ -34,16 +34,12 @@
                     <p class="text-base md:text-lg text-indigo-100 font-light mt-1">סוכן משרות, מנסח נטוורקינג, משפר קורות חיים וסימולטור ראיונות - הכל במקום אחד!</p>
                 </div>
                 
-                <!-- LEFT SIDE: Main Logo Placeholder -->
-                <div class="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 backdrop-blur-sm">
-                    <!-- 
-                        💡 טיפ: כדי לשים את הלוגו שלך, החליפי את הקישור ב-src לקובץ המקומי שלך.
-                        לדוגמה: src="images/logo.png" או src="logo.svg"
-                    -->
-                    <img class="h-14 w-auto object-contain rounded-lg" 
-                         src="https://placehold.co/180x60/1e1b4b/cbd5e1?text=לוגו+מרכז+הזדמנות" 
-                         alt="לוגו מרכז הזדמנות ובינה מלאכותית"
-                         onerror="this.src='https://placehold.co/180x60/1e1b4b/cbd5e1?text=LOGO+PLACEHOLDER'">
+                <!-- LEFT SIDE: Main Logo Banner with smart error handling -->
+                <div class="flex items-center bg-white p-2 rounded-xl shadow-md max-w-[280px] md:max-w-[340px] border border-white/20">
+                    <img class="h-auto w-full object-contain rounded-lg" 
+                         src="באנר 2025.png" 
+                         alt="באנר שותפים רשמי 2025"
+                         onerror="this.parentElement.style.display='none';">
                 </div>
             </div>
             
@@ -105,6 +101,30 @@
                         <h3 class="font-bold text-amber-950 mb-1">סימולטור ראיונות</h3>
                         <p class="text-xs text-slate-600 leading-relaxed">משחקי תפקידים, שאלות מאתגרות ומתן משוב מקצועי לשיפור.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Jobify Integration (Top Section - Job Search Upgrade Context) -->
+        <section class="bg-gradient-to-r from-purple-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-6 md:p-8 shadow-md mb-8 relative overflow-hidden border border-purple-500/25">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:12px_12px]"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-right flex-1">
+                    <span class="bg-purple-500/20 text-purple-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5 mb-3">
+                        <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                        שדרוג חיפוש העבודה שלך
+                    </span>
+                    <h3 class="text-xl md:text-2xl font-extrabold text-white">מחפשים משרות חכם עם Jobify 360</h3>
+                    <p class="text-sm md:text-base text-slate-300 font-light mt-2 max-w-3xl leading-relaxed">
+                        כדי שהסוכן האישי החדש שלך יפעל בצורה המושלמת ביותר, אנו ממליצים להזין לו משרות מלוח המשרות המתקדם **Jobify**. 
+                        פשוט מוצאים משרה, מעתיקים את תיאורה ומדביקים אותה בצ'אט לניתוח והתאמה מיידית!
+                    </p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <a href="https://jobify360.co.il/" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 whitespace-nowrap text-center text-sm md:text-base w-full">
+                        <span>🌐</span> פתח את Jobify 360
+                    </a>
                 </div>
             </div>
         </section>
@@ -269,7 +289,7 @@
                             <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">דוגמה 1: ניתוח משרות</span>
                             <span class="text-xs text-blue-400">סיווג אוטומטי</span>
                         </div>
-                        <h4 class="font-bold text-white text-base mb-2">מצאת משרה מעניינת באולג'ובס או בלינקדאין?</h4>
+                        <h4 class="font-bold text-white text-base mb-2">מצאת משרה מעניינת ב-Jobify, לינקדאין או פייסבוק?</h4>
                         <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed">פשוט מעתיקים את תיאור המשרה ומדביקים אותו בצ'אט. הסוכן שלך ינתח אותה מיד בהתאם לפרופיל האישי שלך.</p>
                     </div>
                     <div class="bg-slate-950/80 p-3.5 rounded-lg text-xs font-mono text-indigo-300 border border-slate-800">
@@ -331,27 +351,13 @@
         <!-- Brand & Connection Hub -->
         <section class="bg-white rounded-2xl p-8 border border-slate-200 mb-8 shadow-sm">
             <div class="max-w-3xl mx-auto text-center">
-                <!-- Customizable Logo Section -->
-                <div class="flex flex-wrap items-center justify-center gap-6 mb-6">
-                    <!-- LOGO PLACEHOLDER 1 -->
-                    <div class="p-2 border border-slate-200 rounded-xl bg-slate-50 shadow-inner">
-                        <!-- 
-                            💡 טיפ: לוגו ראשון (לדוגמה, משרד העבודה או מרכז הזדמנות)
-                            החליפו את ה-src בקובץ המקומי שלכם, למשל src="images/logo1.png"
-                        -->
-                        <img class="h-16 w-auto object-contain" 
-                             src="https://placehold.co/150x60/f8fafc/64748b?text=לוגו+הזדמנות" 
-                             alt="לוגו 1 מרכז הזדמנות">
-                    </div>
-                    <!-- LOGO PLACEHOLDER 2 -->
-                    <div class="p-2 border border-slate-200 rounded-xl bg-slate-50 shadow-inner">
-                        <!-- 
-                            💡 טיפ: לוגו שני (לדוגמה, שותף או עיריית חיפה)
-                            החליפו את ה-src בקובץ המקומי שלכם, למשל src="images/logo2.png"
-                        -->
-                        <img class="h-16 w-auto object-contain" 
-                             src="https://placehold.co/150x60/f8fafc/64748b?text=לוגו+בינה+מלאכותית" 
-                             alt="לוגו 2 בינה מלאכותית">
+                <!-- Unified Logo Banner Section -->
+                <div class="flex flex-wrap items-center justify-center mb-8">
+                    <div class="p-3 border border-slate-200 rounded-2xl bg-slate-50 shadow-inner max-w-lg w-full">
+                        <img class="h-auto w-full object-contain mx-auto" 
+                             src="באנר 2025.png" 
+                             alt="באנר שותפים רשמי 2025"
+                             onerror="this.parentElement.style.display='none';">
                     </div>
                 </div>
                 
@@ -360,16 +366,26 @@
                     אנו במרכז הזדמנות מלווים אתכם צעד אחר צעד לרכישת מיומנויות דיגיטליות, שדרוג הקריירה והצלחה בעולם העבודה החדש באמצעות כלי בינה מלאכותית מתקדמים. צרו עמנו קשר!
                 </p>
                 
-                <!-- Contact Links Grid with high contrast design -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- Contact Links Grid with high contrast design (Now 4 Columns) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <!-- Workshops and Seminars -->
                     <a href="https://katzr.net/f210dd" target="_blank" rel="noopener noreferrer" 
                        class="flex flex-col items-center p-5 bg-gradient-to-br from-indigo-50 to-white hover:from-indigo-100/50 hover:to-white rounded-xl border border-indigo-100 transition-all duration-300 transform hover:-translate-y-1 group hover:shadow-md">
                         <div class="w-12 h-12 rounded-full bg-indigo-500 text-white flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
                             📅
                         </div>
-                        <span class="text-sm font-bold text-indigo-950">מידע והרשמה לסדנאות</span>
+                        <span class="text-sm font-bold text-indigo-950">הרשמה לסדנאות</span>
                         <span class="text-xs text-indigo-600 font-semibold mt-1.5 underline">להרשמה לחצו כאן</span>
+                    </a>
+
+                    <!-- Jobify 360 -->
+                    <a href="https://jobify360.co.il/" target="_blank" rel="noopener noreferrer" 
+                       class="flex flex-col items-center p-5 bg-gradient-to-br from-purple-50 to-white hover:from-purple-100/50 hover:to-white rounded-xl border border-purple-150 transition-all duration-300 transform hover:-translate-y-1 group hover:shadow-md">
+                        <div class="w-12 h-12 rounded-full bg-purple-600 text-white flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+                            🌐
+                        </div>
+                        <span class="text-sm font-bold text-purple-950">ג'וביפיי | Jobify 360</span>
+                        <span class="text-xs text-purple-600 font-semibold mt-1.5 underline">לחיפוש משרות חכם</span>
                     </a>
                     
                     <!-- WhatsApp -->
@@ -414,15 +430,12 @@
             <p class="mb-2">מדריך זה נבנה עבורכם על מנת להקל על תהליך חיפוש העבודה ורכישת כלים דיגיטליים חכמים.</p>
             <p class="font-bold text-slate-300">נוצר באהבה על ידי צוות מרכז הזדמנות ובינה מלאכותית.</p>
             
-            <!-- Optional Footer Partner Logos -->
+            <!-- Footer Partner Logos -->
             <div class="flex items-center justify-center gap-4 py-2 border-t border-b border-slate-800 max-w-sm mx-auto">
-                <!-- 
-                    💡 טיפ: לוגו פוטר (למשל סמל עירייה או שותפים)
-                    החליפו את ה-src בקובץ המקומי שלכם
-                -->
-                <img class="h-8 w-auto opacity-50 hover:opacity-100 transition-opacity" 
-                     src="https://placehold.co/100x40/0f172a/94a3b8?text=שותפים" 
-                     alt="לוגו שותפים פוטר">
+                <img class="h-8 w-auto opacity-55 hover:opacity-100 transition-opacity" 
+                     src="באנר 2025.png" 
+                     alt="לוגו שותפים פוטר"
+                     onerror="this.parentElement.style.display='none';">
             </div>
 
             <div class="text-slate-500 flex items-center justify-center gap-2">
